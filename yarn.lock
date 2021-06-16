@@ -912,6 +912,11 @@
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
 
+"@types/geojson@*":
+  version "7946.0.7"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.7.tgz#c8fa532b60a0042219cdf173ca21a975ef0666ad"
+  integrity sha512-wE2v81i4C4Ol09RtsWFAqg3BUitWbHSpSlIo+bNdsCJijO9sjme+zm+73ZMCa/qMC8UEERxzGbvmr1cffo2SiQ==
+
 "@types/glob@^7.1.1":
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-7.1.1.tgz#aa59a1c6e3fbc421e07ccd31a944c30eba521575"
@@ -920,6 +925,18 @@
     "@types/events" "*"
     "@types/minimatch" "*"
     "@types/node" "*"
+
+"@types/heremaps@^3.0.15":
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/@types/heremaps/-/heremaps-3.1.4.tgz#40b26351aec0048baed7206e1c060fc3f86191d4"
+  integrity sha512-Iz3By4iy2krfE4KQPiPs97/jQAUTyF2j4b7kZZzAyMnmTg2k9wTOh1vwN33auFENDq2wK91JucVQkXgToQasCA==
+
+"@types/leaflet@*", "@types/leaflet@^1.5.1":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@types/leaflet/-/leaflet-1.7.2.tgz#7f4c059c2a1a2c0dbe63d1d9c2f7576b5f0914f4"
+  integrity sha512-W1NQTL4Jy0RB+bKADkOzj9O94WYtJzMBPwWU0BjrWlaa+WyMMH6bMjARUr/A4+jeunYGhG+MVeZIYfE810kFxA==
+  dependencies:
+    "@types/geojson" "*"
 
 "@types/minimatch@*":
   version "3.0.3"
@@ -936,11 +953,26 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.2.tgz#0e58ae66773d7fd7c372a493aff740878ec9ceaa"
   integrity sha512-f8JzJNWVhKtc9dg/dyDNfliTKNOJSLa7Oht/ElZdF/UbMUmAH3rLmAk3ODNjw0mZajDEgatA03tRjB4+Dp/tzA==
 
-"@types/react-dom@^0.14.22":
+"@types/react-autocomplete@^1.8.5":
+  version "1.8.5"
+  resolved "https://registry.yarnpkg.com/@types/react-autocomplete/-/react-autocomplete-1.8.5.tgz#d26a027850cfb963a628145f5745834b06a23884"
+  integrity sha512-O9DENAvxh66Bz7ODa9tCYqHBxvw/bALB8FxKWuPIizo3J+0Qx3Et+x9qMwCEsk5pcAxmRk34MFNalyc9thYT6g==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-dom@^0.14.23":
   version "0.14.23"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-0.14.23.tgz#cecfcfad754b4c2765fe5d29b81b301889ad6c2e"
   integrity sha1-zs/PrXVLTCdl/l0puBswGImtbC4=
   dependencies:
+    "@types/react" "*"
+
+"@types/react-leaflet@^2.4.0":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@types/react-leaflet/-/react-leaflet-2.8.1.tgz#acda592cf1b7dfe20ac81071c21c1e5521fe71a4"
+  integrity sha512-BbFyH9R/MecfXaz1Yt29oGBG8AxIKILgAniO61/kv9/sRe5/qj9yDxf3PW7M+nDl5Wn3V7Mp9inKF0LflV+KkQ==
+  dependencies:
+    "@types/leaflet" "*"
     "@types/react" "*"
 
 "@types/react-transition-group@^4.2.0":
@@ -5152,9 +5184,9 @@ postcss-value-parser@^4.0.0:
   integrity sha512-LmeoohTpp/K4UiyQCwuGWlONxXamGzCMtFxLq4W1nZVGIQLYvMCJx3yAF9qyyuFpflABI9yVdtJAqbihOsCsJQ==
 
 postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.17, postcss@^7.0.5, postcss@^7.0.6:
-  version "7.0.18"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.18.tgz#4b9cda95ae6c069c67a4d933029eddd4838ac233"
-  integrity sha512-/7g1QXXgegpF+9GJj4iN7ChGF40sYuGYJ8WZu8DZWnmhQ/G36hfdk3q9LBJmoK+lZ+yzZ5KYpOoxq7LF1BxE8g==
+  version "7.0.36"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
+  integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
   dependencies:
     chalk "^2.4.2"
     source-map "^0.6.1"
